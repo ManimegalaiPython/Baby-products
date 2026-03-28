@@ -311,7 +311,7 @@ export default function ParentingClasses() {
   const imgSrc = (url, fallback) => {
     if (!url) return fallback;
     if (url.startsWith("http")) return url;
-    return `http://localhost:8000${url}`;
+    return `https://manimegalaipython.pythonanywhere.com${url}`;
   };
 
   const classFallback = "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80";
