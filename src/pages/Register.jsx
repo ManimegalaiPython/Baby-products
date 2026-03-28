@@ -26,7 +26,7 @@ const Register = () => {
     setLoading(true);
 
     try {
-      const res = await fetch('https://manimegalaipython.pythonanywhere.com/api/register/', {
+      const res = await  fetch('http://localhost:8000/api/register/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username: name, email, password }),
