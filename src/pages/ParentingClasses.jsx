@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from '../components/Navbar';
 
 
-const API = "http://localhost:8000/api";
-
+const API = "https://manimegalaipython.pythonanywhere.com/api";
 // ── Register Modal
 function RegisterModal({ onClose, onSuccess }) {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
