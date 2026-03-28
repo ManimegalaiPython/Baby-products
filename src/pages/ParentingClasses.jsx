@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from '../components/Navbar';
 
 
-const API = "https://manimegalaipython.pythonanywhere.com/api";
+const API = "http://localhost:8000/api";
+
 // ── Register Modal
 function RegisterModal({ onClose, onSuccess }) {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
@@ -311,7 +312,7 @@ export default function ParentingClasses() {
   const imgSrc = (url, fallback) => {
     if (!url) return fallback;
     if (url.startsWith("http")) return url;
-    return `https://manimegalaipython.pythonanywhere.com${url}`;
+    return `http://localhost:8000${url}`;
   };
 
   const classFallback = "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80";
